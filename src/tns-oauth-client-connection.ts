@@ -177,7 +177,7 @@ export class TnsOAuthClientConnection {
     completion
   ): Promise<any> {
     let oauthParams = {
-      grant_type: "authorization_code"
+      grant_type: "implicit"
     };
 
     return this.getOAuthAccessToken(client, code, oauthParams, completion);
